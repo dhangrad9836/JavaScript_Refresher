@@ -7,4 +7,12 @@ function introduction(firstName, lastName){
 	return introduction;
 }
 
+//using ES6 template literal
+function intro(firstName, lastName){
+	const intro = `Hi, my name is ${firstName} ${lastName}.`;
+
+	return intro;
+}
+
 console.log(introduction('Darren', 'Dhanpat'));
+console.log(intro('Darren', 'Dhanpat')); //using ES6 template literals
