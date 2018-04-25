@@ -9,3 +9,13 @@ function factorialNumber(num){
 	}
 
 	return product;
+
+//part two to rewrite using recursion
+
+function factorialRecursion(num){
+	if((num == 0) || (num == 1)){
+		return 1;
+	} else {
+		return num * factorialRecursion(num - 1);
+	}
+}
